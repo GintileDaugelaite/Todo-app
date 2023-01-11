@@ -6,7 +6,8 @@ body {
   background-color: #354f52;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-    color: #cad2c5
+    color: #cad2c5;
+    margin: 0 auto;
 }
 
 .wrapper {
@@ -19,12 +20,47 @@ body {
 
 .form {
   margin-top: 10%;
+  width: 100%;
   
 
   &__todo-input {
     padding: 10px;
     border-radius: 8px;
+    border: none;
+    background-color: #2f3e46;
+    color: #cad2c5;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+    width: 50%;
   }
+
+  &__todo-input:focus {
+    outline: 2px solid #cad2c5;
+  }
+
+  &__add-button {
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    color: #cad2c5;
+    background-color: #52796f;
+    cursor: pointer;
+    margin-left: 5px;
+    width: 10%;
+  }
+
+  &__add-button:hover {
+    background-color: #46645c;
+    outline: 2px solid #cad2c5;
+  
+  }
+}
+
+.form-1{
+
+  display: flex;
+  justify-content: center;
+
 }
 
 .task {
@@ -35,7 +71,7 @@ body {
 
   &__list-item {
     list-style: none;
-    border-radius: 8px;
+    border-radius: 5px;
     padding: 10px;
     background-color: #84a98c;
     width: 100%;
