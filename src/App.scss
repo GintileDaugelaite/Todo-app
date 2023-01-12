@@ -8,6 +8,8 @@ body {
     "Lucida Sans", Arial, sans-serif;
     color: #cad2c5;
     margin: 0 auto;
+    background-image: url("background.jpg") ;
+    
 }
 
 .wrapper {
@@ -23,30 +25,32 @@ body {
   // width: 100%;
   
 
-  &__todo-input {
+  &__todo-input{
     padding: 10px;
     border-radius: 8px;
     border: none;
-    background-color: #2f3e46;
-    color: #cad2c5;
+    background-color: #dad7cd;
+    color: #344e41;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
     // width: 50%;
   }
 
   &__todo-input:focus {
-    outline: 2px solid #cad2c5;
+    outline: none;
+ 
   }
+
 
   &__add-button {
     border: none;
-    padding: 10px;
     border-radius: 8px;
     color: #cad2c5;
     background-color: #52796f;
     cursor: pointer;
     margin-left: 5px;
     width: 55px;
+    font-size: 25px;
   }
 
   &__add-button:hover {
@@ -73,7 +77,7 @@ body {
     list-style: none;
     border-radius: 5px;
     padding: 10px;
-    background-color: #84a98c;
+    background-color: #a7cdb7;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -82,14 +86,36 @@ body {
     
   }
 
+ &__edit-btn, &__submit-btn {
+  width: 16px;
+  height: 16px;
+  margin: 0px 10px 0 0;
+  cursor: pointer;
+  filter: invert(11%) sepia(7%) saturate(2137%) hue-rotate(131deg) brightness(97%) contrast(89%);
+ }
+
+ &__edit-input {
+  border-radius: 3px;
+  border: none;
+  background-color: #dad7cd;
+  color: #344e41;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+  // width: 50%;
+ }
+
+
+&__edit-input:focus {
+  outline: none;
+}
   &__delete-btn {
     width: 14px;
     height: 16px;
     cursor: pointer;
-    filter: invert(100%) sepia(1%) saturate(3254%) hue-rotate(21deg) brightness(91%) contrast(77%);
+    filter: invert(11%) sepia(7%) saturate(2137%) hue-rotate(131deg) brightness(97%) contrast(89%);
   }
 
-  &__delete-btn:hover {
+  &__delete-btn:hover, &__edit-btn:hover, &__submit-btn:hover {
     filter: invert(65%) sepia(12%) saturate(156%) hue-rotate(54deg) brightness(86%) contrast(87%);
   }
 
@@ -99,7 +125,7 @@ body {
   width: 18rem;
   color: #2f3e46;
   padding: 0;
-  background-color: #ffffff14;
+  background-color: rgb(255 255 255 / 28%);
   padding: 20px;
   border-radius: 5px;
 

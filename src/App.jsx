@@ -7,6 +7,7 @@ const App = () => {
   const [todo, setTodo] = useState("");
   const [todos, setTodos] = useState([]);
 
+
   const addTodo = (e) => {
     e.preventDefault();
 
@@ -30,8 +31,13 @@ const App = () => {
 
   return (
     <div className="wrapper">
-      <SubmitForm todo={todo} setTodo={setTodo} addTodo={addTodo} />
-      <TaskList todos={todos} remove={deleteTodo} />
+      <SubmitForm
+        todo={todo}
+        setTodo={setTodo}
+        addTodo={addTodo}
+
+      />
+      <TaskList todos={todos} remove={deleteTodo} setTodos={setTodos}/>
     </div>
   );
 };

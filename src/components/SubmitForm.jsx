@@ -13,7 +13,7 @@ const SubmitForm = ({ todo, setTodo, addTodo}) => {
           onChange={(e) => setTodo(e.target.value)}
         />
         <button className="form__add-button" onClick={addTodo}>
-          Add
+          +
         </button>
       </form>
     </div>
