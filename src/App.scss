@@ -20,7 +20,7 @@ body {
 
 .form {
   margin-top: 10%;
-  width: 100%;
+  // width: 100%;
   
 
   &__todo-input {
@@ -31,7 +31,7 @@ body {
     color: #cad2c5;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-    width: 50%;
+    // width: 50%;
   }
 
   &__todo-input:focus {
@@ -46,7 +46,7 @@ body {
     background-color: #52796f;
     cursor: pointer;
     margin-left: 5px;
-    width: 10%;
+    width: 55px;
   }
 
   &__add-button:hover {
@@ -80,12 +80,11 @@ body {
     margin-bottom: 10px;
     word-break: break-all
     
-
   }
 
   &__delete-btn {
-    width: 20px;
-    margin: 0 0 10px 10px;
+    width: 14px;
+    height: 16px;
     cursor: pointer;
     filter: invert(100%) sepia(1%) saturate(3254%) hue-rotate(21deg) brightness(91%) contrast(77%);
   }
@@ -97,7 +96,11 @@ body {
 }
 
 .task-list {
-  width: 70%;
+  width: 18rem;
   color: #2f3e46;
+  padding: 0;
+  background-color: #ffffff14;
+  padding: 20px;
+  border-radius: 5px;
 
 }

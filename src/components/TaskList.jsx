@@ -1,21 +1,25 @@
-import Bin from "./../trash.svg"
-import { useState } from "react";
+import Bin from "./../trash.svg";
 
-const TaskList = ({todos, remove}) => {
-
+const TaskList = ({ todos, remove }) => {
   return todos?.length > 0 ? (
     <ul className="task-list">
       {todos.map((todo) => (
-       <div className="task" key={todo.id}>
-        <li className="task__list-item">{todo.text}</li>
-        <img src={Bin} alt="" className="task__delete-btn" onClick={() => remove(todo.id)}/>
-       </div>
-        
+        <div className="task" key={todo.id}>
+          <li className="task__list-item">
+            {todo.text}
+            <img
+              src={Bin}
+              alt=""
+              className="task__delete-btn"
+              onClick={() => remove(todo.id)}
+            />
+          </li>
+        </div>
       ))}
     </ul>
   ) : (
     <div>
-      <p>No task</p>
+      <p>No task found</p>
     </div>
   );
 };
