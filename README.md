@@ -1,6 +1,6 @@
 # Todo App
 
-An application used to create, edit and delete tasks, built with React, JavaScript, and CSS.
+An application used to create, edit and delete tasks, built with React, JavaScript, and SCSS.
 
 ## Project Status
 
