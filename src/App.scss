@@ -1,15 +1,18 @@
+$border-radius-8: 8px;
+$border-radius-5: 5px;
+$regular-font:"Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+"Lucida Sans", Arial, sans-serif;
+
 * {
   box-sizing: border-box;
 }
 
 body {
   background-color: #354f52;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-    color: #cad2c5;
-    margin: 0 auto;
-    background-image: url("background.jpg") ;
-    
+  font-family: $regular-font; 
+  color: #cad2c5;
+  margin: 0 auto;
+  background-image: url("background.jpg");
 }
 
 .wrapper {
@@ -22,29 +25,24 @@ body {
 
 .form {
   margin-top: 10%;
-  // width: 100%;
-  
 
-  &__todo-input{
+
+  &__todo-input {
     padding: 10px;
-    border-radius: 8px;
+    border-radius: $border-radius-8;
     border: none;
     background-color: #dad7cd;
     color: #344e41;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-    // width: 50%;
+    font-family: $regular-font;
   }
 
   &__todo-input:focus {
     outline: none;
- 
   }
-
 
   &__add-button {
     border: none;
-    border-radius: 8px;
+    border-radius: $border-radius-8;
     color: #cad2c5;
     background-color: #52796f;
     cursor: pointer;
@@ -56,15 +54,12 @@ body {
   &__add-button:hover {
     background-color: #46645c;
     outline: 2px solid #cad2c5;
-  
   }
 }
 
-.form-1{
-
+.form-1 {
   display: flex;
   justify-content: center;
-
 }
 
 .task {
@@ -75,58 +70,61 @@ body {
 
   &__list-item {
     list-style: none;
-    border-radius: 5px;
+    border-radius: $border-radius-5;
     padding: 10px;
     background-color: #a7cdb7;
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
-    word-break: break-all
-    
+    word-break: break-all;
   }
 
- &__edit-btn, &__submit-btn {
-  width: 16px;
-  height: 16px;
-  margin: 0px 10px 0 0;
-  cursor: pointer;
-  filter: invert(11%) sepia(7%) saturate(2137%) hue-rotate(131deg) brightness(97%) contrast(89%);
- }
+  &__edit-btn,
+  &__submit-btn {
+    width: 16px;
+    height: 16px;
+    margin: 0px 10px 0 0;
+    cursor: pointer;
+    filter: invert(11%) sepia(7%) saturate(2137%) hue-rotate(131deg)
+      brightness(97%) contrast(89%);
+  }
 
- &__edit-input {
-  border-radius: 3px;
-  border: none;
-  background-color: #dad7cd;
-  color: #344e41;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-  "Lucida Sans", Arial, sans-serif;
-  // width: 50%;
- }
+  &__edit-input {
+    border-radius: 3px;
+    border: none;
+    background-color: #dad7cd;
+    color: #344e41;
+    font-family: $regular-font;
+  }
 
-
-&__edit-input:focus {
-  outline: none;
-}
+  &__edit-input:focus {
+    outline: none;
+  }
   &__delete-btn {
     width: 14px;
     height: 16px;
     cursor: pointer;
-    filter: invert(11%) sepia(7%) saturate(2137%) hue-rotate(131deg) brightness(97%) contrast(89%);
+    filter: invert(11%) sepia(7%) saturate(2137%) hue-rotate(131deg)
+      brightness(97%) contrast(89%);
   }
 
-  &__delete-btn:hover, &__edit-btn:hover, &__submit-btn:hover {
-    filter: invert(65%) sepia(12%) saturate(156%) hue-rotate(54deg) brightness(86%) contrast(87%);
+  &__delete-btn:hover,
+  &__edit-btn:hover,
+  &__submit-btn:hover {
+    filter: invert(65%) sepia(12%) saturate(156%) hue-rotate(54deg)
+      brightness(86%) contrast(87%);
   }
 
+  &__no-task-text {
+    margin-left: -50px;
+  }
 }
 
 .task-list {
   width: 18rem;
   color: #2f3e46;
-  padding: 0;
   background-color: rgb(255 255 255 / 28%);
   padding: 20px;
-  border-radius: 5px;
-
+  border-radius: $border-radius-5;
 }

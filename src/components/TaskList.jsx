@@ -65,7 +65,7 @@ const TaskList = ({ todos, remove, setTodos }) => {
     </ul>
   ) : (
     <div>
-      <p>No task found</p>
+      <p className="task__no-task-text">No task found</p>
     </div>
   );
 };
