@@ -1,5 +1,4 @@
 const SubmitForm = ({ todo, setTodo, addTodo}) => {
-  
 
   return (
     <div className="form">
