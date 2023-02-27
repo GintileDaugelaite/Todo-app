@@ -2,10 +2,6 @@
 
 An application used to create, edit and delete tasks, built with React, JavaScript, and SCSS.
 
-## Project Status
-
-This project is currently in development.
-
 ## Installation and Setup Instructions
 
 Runs the app in the development mode.\
